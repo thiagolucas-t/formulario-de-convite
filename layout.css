@@ -1,0 +1,84 @@
+
+body {
+
+  display: flex;
+  background-color: black;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  height: 100vh;
+
+}
+
+#app {
+
+  border-radius: 20px;
+  background-color: var(--shape-background);
+  display: flex;
+  width: 1280px;
+  height: 768px;
+  overflow: hidden;
+}
+
+form {
+  padding-bottom: 80px;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  padding-block: 80px;
+  justify-content: center;
+  background-color: var(--shape-body);
+  margin-top: 20px;
+  margin-right: 20px;
+  border-radius: 12px;
+  overflow: auto;
+
+
+  & h1 {
+    margin-bottom: 40px;
+    color: var(--text-heading);
+    font: var(--heading-md);
+  }
+
+  & .formularios{
+    width: 560px;
+  }
+}
+
+aside {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  color: var(--text-body);
+  font: var(--body-sm);
+  font-weight: 300;
+
+  position: relative;
+
+  & #fundo {
+  width: 400px;
+  border-radius: 20px;
+  } 
+
+  & #title-logo {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  z-index: 1;
+
+    & #img-logo{
+      height: 48px;
+      width: max-content;    
+      margin-bottom: 16px;
+    }
+
+    & #txt-logo{
+      width: 200px;
+      margin-bottom: 16px;
+    }
+  }
+}
+

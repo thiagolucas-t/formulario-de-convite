@@ -1,0 +1,38 @@
+
+.flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+
+.inline-block {
+    display: inline-block;
+}
+
+.label{
+  display: flex;
+  font: var(--body-md);
+  font-weight: 400;
+  color: var(--text-body);
+  margin-bottom: 12px;
+}
+
+.label-persom {
+  display: flex;
+  font: var(--body-md);
+  font-weight: 400;
+  color: var(--text-body);
+  margin-bottom: 16px;
+}
+
+.label-theme {
+
+  font: var(--body-md);
+  font-weight: 400;
+  color: var(--text-body);
+ 
+}

@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- PADRÃO -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário de Visitas</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="index.css" />
+
+    <!-- FONTS LINKS -->
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+
+  </head>
+
+  <body>
+    <div id="app">
+
+        <aside>
+            <div class="aside">
+                <div id="title-logo">
+                    <img id="img-logo" src="./assets/Logo-image.svg" alt="Logo-image">
+                    <img id="txt-logo" src="./assets/logo-text.svg" alt="text-logo" />
+                    <p>Crie um convite digital para o seu evento</p>
+                </div>
+                
+               
+                <img id="fundo" src="./assets/Background-image.png" alt="fundo">
+            </div>
+        </aside>
+
+        <main>
+          <div class="main">
+                <h1>Crie seu Convite</h1>
+          <div class="formularios">
+
+                  <form method="post" enctype="multipart/form-data">
+
+                            <!-- SOBRE O EVENTO -->
+                            <fieldset class="about-event">
+                              <legend>
+                              <img src="./assets/calendar.svg" alt="calendario">
+                              <p>Sobre o evento</p> 
+                              </legend>
+
+                              <!-- NOME DO EVENTO -->
+                              <div class="input-wrapper flex" >
+                                <label class="label" for="event-name">Título</label>
+                                <input type="text" id="event-name" name="event-name" placeholder="Nome do evento" />
+                              </div>
+
+                              <!-- DATA INICIO / DATA FIM -->
+                              <div class="input-wrapper2">
+
+                                  <div class="input-wrapper flex flex-1">
+                                    <label class="label"  for="event-date">Início</label>
+                                    <input type="datetime-local" id="event-date" name="event-date"/>
+                                  </div>
+
+                                  <div class="input-wrapper flex flex-1">
+                                    <label class="label" for="event-time">Fim</label>
+                                    <input type="datetime-local" id="event-time" name="event-time" />
+                                  </div>
+
+                              </div>
+
+                              <!-- TIPO DO EVENTO / LOCAL -->
+                              <div class="input-wrapper2">
+
+                                  <div class="input-radio">
+                                    <label class="flex label" for="event-type">Tipo</label>
+
+                                      <div class="radio-options flex flex-1">
+
+                                          <div class="radio-option1">
+                                            <input type="radio" id="presencial" name="event-type" value="Presencial" checked />
+                                            <label for="presencial">
+                                              <div class="radio-inner">
+                                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M10.6666 3.66675C10.2246 3.66675 9.80067 3.84234 9.48811 4.1549C9.17555 4.46746 8.99996 4.89139 8.99996 5.33341V28.3334H23V5.33341C23 4.89139 22.8244 4.46746 22.5118 4.1549C22.1992 3.84234 21.7753 3.66675 21.3333 3.66675H10.6666ZM25 11.0001V5.33341C25 4.36095 24.6136 3.42832 23.926 2.74069C23.2384 2.05306 22.3058 1.66675 21.3333 1.66675H10.6666C9.69417 1.66675 8.76153 2.05306 8.0739 2.74069C7.38627 3.42832 6.99996 4.36095 6.99996 5.33341V15.0001H5.33329C4.36083 15.0001 3.4282 15.3864 2.74057 16.074C2.05293 16.7617 1.66663 17.6943 1.66663 18.6667V26.6667C1.66663 27.6392 2.05293 28.5718 2.74057 29.2595C3.4282 29.9471 4.36083 30.3334 5.33329 30.3334H26.6666C27.6391 30.3334 28.5717 29.9471 29.2593 29.2595C29.947 28.5718 30.3333 27.6392 30.3333 26.6667V14.6667C30.3333 13.6943 29.947 12.7617 29.2593 12.074C28.5717 11.3864 27.6391 11.0001 26.6666 11.0001H25ZM25 13.0001V28.3334H26.6666C27.1087 28.3334 27.5326 28.1578 27.8451 27.8453C28.1577 27.5327 28.3333 27.1088 28.3333 26.6667V14.6667C28.3333 14.2247 28.1577 13.8008 27.8451 13.4882C27.5326 13.1757 27.1087 13.0001 26.6666 13.0001H25ZM6.99996 17.0001H5.33329C4.89127 17.0001 4.46734 17.1757 4.15478 17.4882C3.84222 17.8008 3.66663 18.2247 3.66663 18.6667V26.6667C3.66663 27.1088 3.84222 27.5327 4.15478 27.8453C4.46734 28.1578 4.89127 28.3334 5.33329 28.3334H6.99996V17.0001ZM12.3333 8.00008C12.3333 7.4478 12.781 7.00008 13.3333 7.00008H18.6666C19.2189 7.00008 19.6666 7.4478 19.6666 8.00008C19.6666 8.55237 19.2189 9.00008 18.6666 9.00008H13.3333C12.781 9.00008 12.3333 8.55237 12.3333 8.00008ZM12.3333 13.3334C12.3333 12.7811 12.781 12.3334 13.3333 12.3334H18.6666C19.2189 12.3334 19.6666 12.7811 19.6666 13.3334C19.6666 13.8857 19.2189 14.3334 18.6666 14.3334H13.3333C12.781 14.3334 12.3333 13.8857 12.3333 13.3334ZM12.3333 18.6667C12.3333 18.1145 12.781 17.6667 13.3333 17.6667H18.6666C19.2189 17.6667 19.6666 18.1145 19.6666 18.6667C19.6666 19.219 19.2189 19.6667 18.6666 19.6667H13.3333C12.781 19.6667 12.3333 19.219 12.3333 18.6667ZM12.3333 24.0001C12.3333 23.4478 12.781 23.0001 13.3333 23.0001H18.6666C19.2189 23.0001 19.6666 23.4478 19.6666 24.0001C19.6666 24.5524 19.2189 25.0001 18.6666 25.0001H13.3333C12.781 25.0001 12.3333 24.5524 12.3333 24.0001Z" fill="white"/>
+                                                </svg>
+                                                Presencial
+                                              </div>
+                                            </label>                                   
+                                          </div>
+
+                                          <div class="slider1"></div>
+
+                                          <div class="radio-option2">
+                                            <input type="radio" id="online" name="event-type" value="Online" />
+                                            <label for="online">
+                                              <div class="radio-inner">
+                                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M5.33329 9C4.41282 9 3.66663 9.74619 3.66663 10.6667V21.3333C3.66663 22.2538 4.41282 23 5.33329 23H18.6666C19.5871 23 20.3333 22.2538 20.3333 21.3333V17.347C20.3332 17.3373 20.3332 17.3276 20.3333 17.3178V14.019C20.3331 14.0069 20.3331 13.9949 20.3333 13.9829V10.6667C20.3333 9.74619 19.5871 9 18.6666 9H5.33329ZM22.3333 12.2588V10.6667C22.3333 8.64162 20.6917 7 18.6666 7H5.33329C3.30825 7 1.66663 8.64162 1.66663 10.6667V21.3333C1.66663 23.3584 3.30825 25 5.33329 25H18.6666C20.6917 25 22.3333 23.3584 22.3333 21.3333V19.2019L27.7433 22.8085C27.9943 22.9755 28.2859 23.0713 28.587 23.0858C28.8881 23.1002 29.1875 23.0326 29.4533 22.8903C29.7191 22.748 29.9413 22.5363 30.0962 22.2777C30.2512 22.0191 30.3331 21.7233 30.3333 21.4219V10.4936C30.3333 10.4935 30.3333 10.4937 30.3333 10.4936C30.3333 10.2005 30.256 9.9122 30.1092 9.65845C29.9624 9.40462 29.7511 9.19404 29.4968 9.04796C29.2425 8.90188 28.9542 8.82548 28.661 8.82648C28.3677 8.82747 28.0799 8.90583 27.8266 9.05363L22.3333 12.2588ZM22.3333 14.5743V16.7982L28.3333 20.7982V11.0735L22.3333 14.5743Z" fill="white"/>
+                                                </svg>
+                                                Online
+                                              </div>
+                                            </label>
+                                          </div>
+
+                                          <div class="slider2"></div>
+                                      </div>
+                                  </div>
+
+                                  <div class="input-wrapper flex flex-1">
+                                    <label class="label"  for="event-location">Local</label>
+                                    <input type="text" id="event-location" name="event-location" placeholder="Link ou endereço" />
+                                  </div>
+
+                              </div>
+
+                              <!-- DESCRIÇÃO -->
+                              <div class="text-area flex">
+                                <label class="label"  for="event-description">Descrição</label>
+                                <textarea name="event-description" id="event-description"
+                                placeholder="Escreva sobre detalhes do evento"></textarea>
+                              </div>
+
+                            </fieldset>
+
+                            <!-- PERSONALIZAÇÃO -->
+                            <fieldset class="custom">
+                              <legend>
+                              <img src="./assets/paintbrush-vertical.svg" alt="usuario">
+                              <p>Personalização</p> 
+                              </legend>
+
+                              <!-- CORES-->
+
+                              <label class="label-persom flex" for="cores">Cor principal</label>
+                              <div id="cores">
+
+                              <div class="input-checkbox-cores">
+                                  <div id="cor1">
+                                      <div class="checkbox-image"><img src="./assets/cores/cor1.png" alt=""></div>
+                                      <input type="checkbox" id="color1" name="color1" value="color1" checked />                                     
+                                  </div>
+                              </div>
+
+                              <div class="input-checkbox-cores">
+                                  <div id="cor2">
+                                      <div class="checkbox-image"><img src="./assets/cores/cor2.png" alt=""></div>
+                                      <input type="checkbox" id="color2" name="color2" value="color2"/>                                     
+                                  </div>
+                              </div>                        
+
+                              <div class="input-checkbox-cores">
+                                  <div id="cor3">
+                                      <div class="checkbox-image"><img src="./assets/cores/cor3.png" alt=""></div>
+                                      <input type="checkbox" id="color3" name="color3" value="color3" />                                     
+                                  </div>
+                              </div>                           
+
+                              <div class="input-checkbox-cores">
+                                  <div id="cor4">
+                                      <div class="checkbox-image"><img src="./assets/cores/cor4.png" alt=""></div>
+                                      <input type="checkbox" id="color4" name="color4" value="color4"/>                                     
+                                  </div>
+                              </div> 
+                              
+                              <div class="input-checkbox-cores">
+                                  <div id="cor5">
+                                      <div class="checkbox-image"><img src="./assets//cores/cor5.png" alt=""></div>
+                                      <input type="checkbox" id="color5" name="color5" value="color5"/>                                     
+                                  </div>
+                              </div>                         
+
+                              <div class="input-checkbox-cores">
+                                  <div id="cor6">
+                                      <div class="checkbox-image"><img src="./assets//cores/cor6.png" alt=""></div>
+                                      <input type="checkbox" id="color6" name="color6" value="color6"/>                                     
+                                  </div>
+                              </div> 
+
+                              <div class="input-checkbox-cores">
+                                  <div id="cor7">
+                                      <div class="checkbox-image"><img src="./assets/cores/cor7.png" alt=""></div>
+                                      <input type="checkbox" id="color7" name="color7" value="color7"/>                                     
+                                  </div>
+                              </div> 
+
+                              <div class="input-checkbox-cores">
+                                  <div id="cor8">
+                                      <div class="checkbox-image"><img src="./assets/cores/cor8.png" alt=""></div>
+                                      <input type="checkbox" id="color8" name="color8" value="color8"/>                                     
+                                  </div>
+                              </div> 
+
+                              <div class="input-checkbox-cores">
+                                  <div id="cor9">
+                                      <div class="checkbox-image"><img src="./assets/cores/cor9.png" alt=""></div>
+                                      <input type="checkbox" id="color9" name="color9" value="color9"/>                                     
+                                  </div>
+                              </div> 
+
+                              <div class="input-checkbox-cores">
+                                  <div id="cor10">
+                                      <div class="checkbox-image"><img src="./assets/cores/cor10.png" alt=""></div>
+                                      <input type="checkbox" id="color10" name="color10" value="color10"/>                                     
+                                  </div>
+                              </div> 
+
+                              <div class="input-checkbox-cores">
+                                  <div id="cor11">
+                                      <div class="checkbox-image"><img src="./assets/cores/cor11.png" alt=""></div>
+                                      <input type="checkbox" id="color11" name="color11" value="color11"/>                                     
+                                  </div>
+                              </div> 
+
+                              </div>
+
+                              <!-- TEMA DO EVENTO -->
+                                <div class="event-theme">
+                                    <label class="label-persom" for="temas">Tema do Evento</label>
+
+                                    <div id="temas">
+                                      <div class="input-checkbox-temas">
+                                          <div id="tema1">
+                                              <div class="checkbox-image"><img src="./assets/temas/Image.png" alt=""></div>
+                                              <input type="checkbox" id="tema1" name="tema1" value="tema1" checked/>                                    
+                                              <label class="label-theme" for="tema1">Aniversário</label>
+                                            </div>
+                                          </div>
+
+                                      <div class="input-checkbox-temas">
+                                          <div id="tema2">
+                                              <div class="checkbox-image"><img src="./assets/temas/Image-1.png" alt=""></div>
+                                              <input type="checkbox" id="tema2" name="tema2" value="tema2"/>                                    
+                                              <label class="label-theme" for="tema2">Infantil</label>
+                                            </div>
+                                          </div>
+                                          
+                                          
+                                      <div class="input-checkbox-temas">
+                                          <div id="tema3">
+                                              <div class="checkbox-image"><img src="./assets/temas/Image-2.png" alt=""></div>
+                                              <input type="checkbox" id="tema3" name="tema3" value="tema3"/>                                    
+                                              <label class="label-theme" for="tema3">Formatura</label>
+                                            </div>
+                                          </div>
+
+
+                                      <div class="input-checkbox-temas">
+                                          <div id="tema4">
+                                              <div class="checkbox-image"><img src="./assets/temas/Image-3.png" alt=""></div>
+                                              <input type="checkbox" id="tema4" name="tema4" value="tema4"/>                                    
+                                              <label class="label-theme" for="tema4">Casamento</label>
+                                            </div>
+                                          </div>
+
+
+                                      <div class="input-checkbox-temas">
+                                          <div id="tema5">
+                                              <div class="checkbox-image"><img src="./assets/temas/Image-4.png" alt=""></div>
+                                              <input type="checkbox" id="tema5" name="tema5" value="tema5"/>                                    
+                                              <label class="label-theme" for="tema5">Chá de bebê</label>
+                                            </div>
+                                          </div>
+
+                                      <div class="input-checkbox-temas">
+                                          <div id="tema6">
+                                              <div class="checkbox-image"><img src="./assets/temas/Image-5.png" alt=""></div>
+                                              <input type="checkbox" id="tema6" name="tema6" value="tema6"/>                                    
+                                              <label class="label-theme" for="tema6">Chá de panela</label>
+                                            </div>
+                                          </div>
+
+
+                                      <div class="input-checkbox-temas">
+                                          <div id="tema7">
+                                              <div class="checkbox-image"><img src="./assets/temas/Image-6.png" alt=""></div>
+                                              <input type="checkbox" id="tema7" name="tema7" value="tema7"/>                                    
+                                              <label class="label-theme" for="tema7">Carnaval</label>
+                                            </div>
+                                          </div>
+
+                                      <div class="input-checkbox-temas">
+                                          <div id="tema8">
+                                              <div class="checkbox-image"><img src="./assets/temas/Image-7.png" alt=""></div>
+                                              <input type="checkbox" id="tema8" name="tema8" value="tema8"/>                                    
+                                              <label class="label-theme" for="tema8">Páscoa</label>
+                                            </div>
+                                          </div>
+
+
+                                      <div class="input-checkbox-temas">
+                                          <div id="tema9">
+                                              <div class="checkbox-image"><img src="./assets/temas/Image-8.png" alt=""></div>
+                                              <input type="checkbox" id="tema9" name="tema9" value="tema9"/>                                    
+                                              <label class="label-theme" for="tema9">São João</label>
+                                            </div>
+                                          </div>
+
+
+                                      <div class="input-checkbox-temas">
+                                          <div id="tema10">
+                                              <div class="checkbox-image"><img src="./assets/temas/Image-9.png" alt=""></div>
+                                              <input type="checkbox" id="tema10" name="tema10" value="tema10"/>                                    
+                                              <label class="label-theme" for="tema10">Halloween</label>
+                                            </div>
+                                          </div>
+
+                                      <div class="input-checkbox-temas">
+                                          <div id="tema11">
+                                              <div class="checkbox-image"><img src="./assets/temas/Image-10.png" alt=""></div>
+                                              <input type="checkbox" id="tema11" name="tema11" value="tema11"/>                                    
+                                              <label class="label-theme" for="tema11">Natal</label>
+                                            </div>
+                                          </div>
+
+
+                                      <div class="input-checkbox-temas">
+                                          <div id="tema12">
+                                              <div class="checkbox-image"><img src="./assets/temas/Image-11.png" alt=""></div>
+                                              <input type="checkbox" id="tema12" name="tema12" value="tema12"/>                                    
+                                              <label class="label-theme" for="tema12">Outro</label>
+                                            </div>
+                                          </div>
+
+                                      </div>       
+                                      
+                                    <div id="style-cape">
+
+                                      <div class="toggle-option">
+
+                                          <label class="label" for="toggle">Estilo</label>
+                                          <div class="input-checkbox-toggle">
+                                            <div id="toggle">
+                                                <div class="toggle-image"></div>
+                                                <input type="checkbox" id="toggle" name="toggle" value="toggle"/>                  
+                                            </div>
+                                            <p>Escuro</p>
+
+                                          </div>
+
+
+                                      </div>
+
+                                      <div class="cape-option">
+
+                                          <label class="label" for="cape">Foto de capa</label>  
+                                          <div class="input-droparea">
+                                            <div id="cape">
+
+                                                <div class="cape-image">
+                                                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.64645 1.64645C7.84171 1.45118 8.15829 1.45118 8.35355 1.64645L11.6869 4.97978C11.8821 5.17504 11.8821 5.49162 11.6869 5.68689C11.4916 5.88215 11.175 5.88215 10.9798 5.68689L8.5 3.20711V10C8.5 10.2761 8.27614 10.5 8 10.5C7.72386 10.5 7.5 10.2761 7.5 10V3.20711L5.02022 5.68689C4.82496 5.88215 4.50838 5.88215 4.31311 5.68689C4.11785 5.49162 4.11785 5.17504 4.31311 4.97978L7.64645 1.64645ZM2 9.5C2.27614 9.5 2.5 9.72386 2.5 10V12.6667C2.5 12.8877 2.5878 13.0996 2.74408 13.2559C2.90036 13.4122 3.11232 13.5 3.33333 13.5H12.6667C12.8877 13.5 13.0996 13.4122 13.2559 13.2559C13.4122 13.0996 13.5 12.8877 13.5 12.6667V10C13.5 9.72386 13.7239 9.5 14 9.5C14.2761 9.5 14.5 9.72386 14.5 10V12.6667C14.5 13.1529 14.3068 13.6192 13.963 13.963C13.6192 14.3068 13.1529 14.5 12.6667 14.5H3.33333C2.8471 14.5 2.38079 14.3068 2.03697 13.963C1.69315 13.6192 1.5 13.1529 1.5 12.6667V10C1.5 9.72386 1.72386 9.5 2 9.5Z" fill="#59B2FF"/>
+                                                  </svg>
+                                                </div>
+
+                                                <input type="file" id="cape" name="cape" value="cape" />
+
+                                                <p>Selecionar</p>
+                    
+                                            </div>
+
+                                            <div class="text-file">
+                                              Nenhum arquivo selecionado
+                                            </div>
+                                          </div>
+
+                                  </div>
+
+                            </fieldset>    
+
+                            <!-- DADOS PARA CONTATO -->
+                            <fieldset class="contact">
+                              <legend>
+                                <img src="./assets/contact.svg" alt="x">
+                                <p>Dados para contato</p>
+                              </legend>
+
+                              <div class="input-wrapper name-contact">
+
+                                  <label class="label" for="name-contact">Nome</label>
+                                  <div id="name-contact-input">
+                                    <input type="text" id="name-contact" name="name-contact" required placeholder="Nome Completo" />                                                 
+                                  </div>
+                                  
+                                  <div class="error">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+        <g clip-path="url(#clip0_4185_256)">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M8.00004 1.83337C4.59428 1.83337 1.83337 4.59428 1.83337 8.00004C1.83337 11.4058 4.59428 14.1667 8.00004 14.1667C11.4058 14.1667 14.1667 11.4058 14.1667 8.00004C14.1667 4.59428 11.4058 1.83337 8.00004 1.83337ZM0.833374 8.00004C0.833374 4.042 4.042 0.833374 8.00004 0.833374C11.9581 0.833374 15.1667 4.042 15.1667 8.00004C15.1667 11.9581 11.9581 15.1667 8.00004 15.1667C4.042 15.1667 0.833374 11.9581 0.833374 8.00004ZM8.00004 4.83337C8.27618 4.83337 8.50004 5.05723 8.50004 5.33337V8.00004C8.50004 8.27618 8.27618 8.50004 8.00004 8.50004C7.7239 8.50004 7.50004 8.27618 7.50004 8.00004V5.33337C7.50004 5.05723 7.7239 4.83337 8.00004 4.83337ZM7.50004 10.6667C7.50004 10.3906 7.7239 10.1667 8.00004 10.1667H8.00671C8.28285 10.1667 8.50671 10.3906 8.50671 10.6667C8.50671 10.9428 8.28285 11.1667 8.00671 11.1667H8.00004C7.7239 11.1667 7.50004 10.9428 7.50004 10.6667Z" fill="#FF5959"/>
+        </g>
+        <defs>
+          <clipPath id="clip0_4185_256">
+            <rect width="16" height="16" fill="white"/>
+          </clipPath>
+        </defs>
+                                    </svg>
+                                    <span>Campo Obrigatório</span>
+                                  </div>
+                              </div>
+
+                              <div class="input-wrapper email-number-contact">
+                                  
+                                  <div id="email-contact-input">
+                                    <label class="label" for="email-contact">Email</label>
+                                    <input type="email" id="email-contact" name="email-contact"placeholder="exemplo@email.com" />                                            
+                                  </div>
+
+                                  
+                                  <div id="cel-number-input">
+                                    <label class="label" for="cel-number-input">Telefone</label>
+                                    <input type="text" id="cel-number-input" name="cel-number-input" placeholder="(99) 99999-9999" />                                   
+                                  </div>
+
+                              </div>
+                            </fieldset>
+
+                            <!-- TERMOS DE PRIVACIDADE -->
+                            <fieldset class="terms">
+
+                              <div class="input-terms">
+                                <div class="terms-options flex">
+                                        <div class="term-option1">
+                                          <div class="input-term-option1">
+                                            <input type="checkbox" id="terms-option1" name="checkbox" value="termo1" checked>
+                                          </div>
+                                          <p>Li e concordo com os <a href="#">Termos e Condições</a> e com a <a href="#">Política de Privacidade</a></p>
+                                        </div>
+
+                                        <div class="term-option2">
+                                          <div class="input-term-option2">
+                                            <input type="checkbox" id="terms-option2" name="checkbox" value="termo2">
+                                          </div>
+                                          <p>Aceito receber atualizações e promoções por e-mail</p>
+                                        </div>        
+                                        
+                                        <div class="term-option3">
+                                          <div class="input-term-option3">
+                                            <input type="checkbox" id="terms-option3" name="checkbox" value="termo3">
+                                          </div>
+                                          <p>Aceito receber atualizações e promoções por SMS</p>
+                                        </div>                                    
+                                  </div>
+                                  
+                                </div>
+                            </fieldset>    
+
+                            <button
+                            type="submit"><img src="./assets/ticket.svg" alt="ticket">Gerar Convite</button>
+                </form>  
+        </main>
+
+    </div>
+
+  </body>
+
+
+</html>
