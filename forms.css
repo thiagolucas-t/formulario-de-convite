@@ -432,13 +432,13 @@ fieldset + fieldset {
     width: 20px;
     height: 20px;
     position: relative;
-    background-image: url(/assets/term-select-false.svg);
+    background-image: url(../assets/term-select-false.svg);
     background-repeat: no-repeat;
     transition: all 0.2s;
     display: flex;
     
     &:has(:checked) {
-      background-image: url(/assets/term-select-true.svg);
+      background-image: url(../assets/term-select-true.svg);
       border-radius: 4px;
       
     }
