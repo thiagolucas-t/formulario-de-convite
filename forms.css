@@ -193,7 +193,7 @@ fieldset + fieldset {
   }
 
   & .checkbox-image {
-    background-image: url(/assets/Selected=false\,\ Hover=false.png);
+    background-image: url('assets/Selected=false-Hover=false.png');
     display: flex;
     justify-content: center;
     align-items: center;
@@ -205,13 +205,13 @@ fieldset + fieldset {
 
   &:hover {
     & .checkbox-image {
-      background-image: url(/assets/Selected=false\,\ Hover=true.png);
+      background-image: url('assets/Selected=false-Hover=true.png');
     }
   }
 
   &:has(input[type="checkbox"]:checked) {
     & .checkbox-image {
-      background-image: url(/assets/Selected=true\,\ Hover=false.png);
+      background-image: url('assets/Selected=true-Hover=false.png');
     }
   }
 
