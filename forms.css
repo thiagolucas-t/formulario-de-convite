@@ -299,7 +299,7 @@ fieldset + fieldset {
 
 
   & .toggle-image {
-    background-image: url('assets/toggle-dark.png');
+    background-image: url('/assets/toggle-dark.png');
     width: 64px;
     height: 32px;
   }
@@ -307,7 +307,7 @@ fieldset + fieldset {
   &:has(:checked) {
 
     & .toggle-image {
-      background-image: url('assets/toggle-light.svg');
+      background-image: url('/assets/toggle-light.svg');
     }
 
   }
